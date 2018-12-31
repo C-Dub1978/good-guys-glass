@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  height: 100%;
+  width: 100%;
+  margin: 10px auto !important;
+  border: 2px solid red;
+  border-radius: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 40rem) {
+  body {
+    width: 95%;
+  }
+}
