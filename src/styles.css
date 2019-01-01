@@ -15,6 +15,18 @@ body {
   color: #281713;
 }
 
+h1 {
+  color: #f80818 !important;
+}
+
+h3 {
+  color: #54b9c5 !important;
+}
+
+hr {
+  border-color: #54b9c5 !important;
+}
+
 .black-shadow {
   box-shadow: 1px 1px 8px #281713;
 }
@@ -35,8 +47,32 @@ body {
   cursor: default;
 }
 
+.main-page-container {
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.main-page-row {
+  text-align: center;
+  padding: 15px;
+  padding-top: 55px;
+}
+
 @media (min-width: 40rem) {
   body {
     width: 95%;
+  }
+
+  .main-page-container {
+    text-align: left;
+  }
+
+  .main-page-row {
+    text-align: center;
+    margin-top: 0;
+    padding: 15px;
+    padding-top: 55px;
   }
 }

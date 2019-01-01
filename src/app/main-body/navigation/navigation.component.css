@@ -1,0 +1,22 @@
+nav {
+  width: 100%;
+  border-bottom: 1px solid #f80818;
+  padding-bottom: 0;
+}
+
+.nav-link {
+  color: #281713;
+}
+
+.nav-link:hover {
+  color: #df9a8c;
+}
+
+.nav-active {
+  background-color: #f80818;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #fff;
+}
