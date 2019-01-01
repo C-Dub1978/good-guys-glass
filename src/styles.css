@@ -1,11 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+/**
+Global color scheme:
+
+Main Red - #F80818
+Salmon/Pinkish - #DF9A8C
+Black - #281713
+Teal - #54B9C5
+*/
 body {
   height: 100%;
   width: 100%;
   margin: 10px auto !important;
-  border: 2px solid red;
-  border-radius: 8px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #281713;
+}
+
+.black-shadow {
+  box-shadow: 1px 1px 8px #281713;
+}
+
+.teal-shadow {
+  box-shadow: 1px 1px 8px #54b9c5;
+}
+
+.telephone-anchor {
+  color: #fff;
+  text-decoration: none;
+  cursor: default;
+}
+
+.telephone-anchor:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: default;
 }
 
 @media (min-width: 40rem) {

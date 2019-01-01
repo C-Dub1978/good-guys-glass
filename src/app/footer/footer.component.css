@@ -1,0 +1,37 @@
+.footer__box {
+  margin-top: 25px;
+}
+
+h6 {
+  color: #df9a8c;
+}
+
+.container.outer__container {
+  text-align: center;
+  background-color: #281713;
+  min-height: 180px;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px;
+}
+
+.container.outer__container h6 {
+  padding: 5px;
+  border-bottom: 2px solid #54b9c5;
+}
+
+.box {
+  font-size: 0.75rem;
+  text-align: center;
+  min-height: 130px;
+}
+
+.box.info {
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer__box {
+    margin-top: 5px;
+  }
+}

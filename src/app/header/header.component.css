@@ -3,10 +3,30 @@
   height: 100%;
   text-align: center;
   vertical-align: middle;
+  margin-bottom: 5px;
 }
 
 .carousel__box {
   margin-top: 20px;
   margin-bottom: 5px;
   vertical-align: middle;
+}
+
+.call__us {
+  background: #f80818;
+  border-radius: 8px;
+  width: 75%;
+  margin: 5px auto;
+  height: 45px;
+}
+
+.call__us > h5 {
+  color: #281713;
+  padding: 5px;
+}
+
+@media (max-width: 500px) {
+  .call__us > h5 {
+    font-size: 0.85rem;
+  }
 }
