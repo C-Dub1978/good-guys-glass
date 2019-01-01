@@ -15,7 +15,8 @@ body {
   color: #281713;
 }
 
-h1 {
+h1,
+h2 {
   color: #f80818 !important;
 }
 
