@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WindshieldSafetyComponent implements OnInit {
 
-  constructor() { }
+   ructor() { }
 
   ngOnInit() {
   }

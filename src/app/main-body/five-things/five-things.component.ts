@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FiveThingsComponent implements OnInit {
 
-  constructor() { }
+   ructor() { }
 
   ngOnInit() {
   }

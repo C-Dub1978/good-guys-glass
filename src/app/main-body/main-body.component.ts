@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MainBodyComponent implements OnInit {
   navLinks: any;
 
-  constructor() {}
+   ructor() {}
 
   ngOnInit() {
     this.navLinks = [

@@ -1,3 +1,4 @@
+import { VehicleMakesModelsService } from './vehicle-makes-models.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,56 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RequestQuoteComponent implements OnInit {
   years: number[];
-  makesAndModels: any;
+  makes: string[];
 
-  constructor() {}
+  constructor(private vehicleService: VehicleMakesModelsService) {}
 
   ngOnInit() {
+    this.makes = this.vehicleService.getMakes();
     this.years = [];
     const beginning = 1980;
     const currentYear = new Date().getFullYear();
+
     for (let i = beginning; i <= +currentYear; i++) {
       this.years.push(i);
     }
-
-    this.makesAndModels = [
-      {'Acura': []},
-      {'Alfa Romeo': []},
-      {'Aston Martin': []},
-      {'Audi': []},
-      {'BMW': []},
-      {'Buick': []},
-      {'Cadillac': []},
-      {'Chevrolet': []},
-      {'Chrysler': []},
-      {'Dodge': []},
-      {'Fiat': []},
-      {'Ford': []},
-      {'GMC': []},
-      {'Honda': []},
-      {'Hyundai': []},
-      {'Hummer': []},
-      {'Infiniti': []},
-      {'Jaguar': []},
-      {'Jeep': []},
-      {'Kia': []},
-      {'Land Rover': []},
-      {'Lexus': []},
-      {'Maserati': []},
-      {'Mazda': []},
-      {'Mercedes-Benz': []},
-      {'Mini': []},
-      {'Mitsubishi': []},
-      {'Nissan': []},
-      {'Other': null}
-      {'Porsche': []},
-      {'Saab': []},
-      {'Subaru': []},
-      {'Suzuki': []},
-      {'Tesla': []},
-      {'Toyota': []},
-      {'Volkswagen': []},
-      {'Volvo': []}
-    ];
   }
 }
