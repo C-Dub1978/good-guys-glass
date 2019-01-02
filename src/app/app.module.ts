@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { RequestQuoteComponent } from './main-body/request-quote/request-quote.c
 import { WindshieldSafetyComponent } from './main-body/windshield-safety/windshield-safety.component';
 import { FiveThingsComponent } from './main-body/five-things/five-things.component';
 import { FaqComponent } from './main-body/faq/faq.component';
+import { SuccessQuoteComponent } from './main-body/success-quote/success-quote.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +36,11 @@ import { FaqComponent } from './main-body/faq/faq.component';
     RequestQuoteComponent,
     WindshieldSafetyComponent,
     FiveThingsComponent,
-    FaqComponent
+    FaqComponent,
+    SuccessQuoteComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, ReactiveFormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

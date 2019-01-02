@@ -37,6 +37,7 @@ export class VehicleMakesModelsService {
     'Mini',
     'Mitsubishi',
     'Nissan',
+    'Other',
     'Porsche',
     'Saab',
     'Subaru',
