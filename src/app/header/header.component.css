@@ -12,6 +12,12 @@
   vertical-align: middle;
 }
 
+.gg__logo > figure > img {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
 .call__us {
   background: #f80818;
   border-radius: 8px;
@@ -26,6 +32,9 @@
 }
 
 @media (max-width: 500px) {
+  .call__us {
+    height: 70px;
+  }
   .call__us > h5 {
     font-size: 0.85rem;
   }
