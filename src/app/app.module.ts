@@ -19,6 +19,7 @@ import { WindshieldSafetyComponent } from './main-body/windshield-safety/windshi
 import { FiveThingsComponent } from './main-body/five-things/five-things.component';
 import { FaqComponent } from './main-body/faq/faq.component';
 import { SuccessQuoteComponent } from './main-body/success-quote/success-quote.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,12 @@ import { SuccessQuoteComponent } from './main-body/success-quote/success-quote.c
     FaqComponent,
     SuccessQuoteComponent
   ],
-  imports: [BrowserModule, ReactiveFormsModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    AppRoutingModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

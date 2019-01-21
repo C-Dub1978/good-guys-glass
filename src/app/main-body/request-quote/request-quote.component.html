@@ -1,6 +1,6 @@
 <div class="row main-page-row"><h1>Quick Quote</h1></div>
 <div class="row">
-  <div class="container container-fluid">
+  <div class="container container-fluid" *ngIf="!submitted; else submittedForm">
     <form [formGroup]="quoteForm" (ngSubmit)="onSubmitQuote()">
       <div formGroupName="userData">
         <div class="form-group">
@@ -163,3 +163,4 @@
     </form>
   </div>
 </div>
+<ng-template #submittedForm>{{ finalResponse }}</ng-template>
