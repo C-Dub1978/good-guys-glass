@@ -21,7 +21,7 @@ export class RequestQuoteComponent implements OnDestroy, OnInit {
   // Used for the ng-containers in the template to show/hide certain form
   //  inputs
   other = false;
-  postUrl = 'http://localhost/php/process-form.php';
+  postUrl = '../../php/process-form.php';
   submitted = false;
   finalResponse = '';
 
